@@ -6,5 +6,5 @@ Suite Setup    Authenticate as Admin
 Get Bookings from Restful Booker
     ${bookings}=    Get Bookings
     FOR    ${b}    IN    @{bookings}
-        Log To Console    ${b}[bookingid] - ${b}[firstname] ${b}[lastname]
+        Log    ${b}[bookingid] - ${b}[firstname] ${b}[lastname]
     END
