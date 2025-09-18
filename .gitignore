@@ -1,0 +1,10 @@
+# Robot logs
+*.log
+*.report.html
+*.output.xml
+*.retry.xml
+results/
+
+# Python venv
+.venv/
+__pycache__/
