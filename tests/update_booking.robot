@@ -3,7 +3,7 @@ Resource    ../resources/keywords.resource
 Suite Setup    Authenticate as Admin
 
 *** Test Cases ***
-Update Booking
+Cenário: PUT - Update Booking 200
     ${id}=    Create Booking    Sabrina    Freitas    200    2022-12-31    2023-01-01
 
     ${resp}=  Update Booking    ${id}    Sabrina    Atualizada    300    2023-01-02    2023-01-05    Breakfast

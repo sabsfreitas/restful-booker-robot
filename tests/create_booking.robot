@@ -3,7 +3,7 @@ Resource    ../resources/keywords.resource
 Suite Setup    Authenticate as Admin
 
 *** Test Cases ***
-Create a Booking at Restful Booker
+Cenário: POST - Create a Booking at Restful Booker 200
     ${id}=    Create Booking    Sabrina    Freitas    200    2025-09-16    2025-09-19
     ${resp}=  Get Booking By Id    ${id}
 

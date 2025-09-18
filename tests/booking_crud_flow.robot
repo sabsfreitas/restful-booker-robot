@@ -3,7 +3,7 @@ Resource    ../resources/keywords.resource
 Suite Setup    Authenticate as Admin
 
 *** Test Cases ***
-Full CRUD
+Cenário: POST, GET, PATCH, PUT, DELETE - Full CRUD 200
     ${id}=    Create Booking    Sabrina    Freitas    200    2022-12-31    2023-01-01
     ${data}=  Get Booking By Id    ${id}
     Should Be Equal    ${data}[firstname]    Sabrina
